@@ -35,6 +35,10 @@ aside{
     width: 80%;
  }
 
+ #aside-header figure :nth-child(2){
+    display: none;
+ }
+
 #aside-sect1{
     display: flex;
     flex-direction: column;
@@ -43,11 +47,11 @@ aside{
     color: grey;
 }
 
-#aside-sect1 span{
+ #aside-sect1 .icon-text{
+    display: flex;
+    gap: 2px;
     align-items: center;
-    font-size: 14px;
-   
-}
+ }
 
 #aside-sect1 span i{
     font-size: 20px;
@@ -78,17 +82,17 @@ aside #aside-sect2 h2{
 aside #aside-sect2 span{
     display: flex;
     align-items: center;
-    gap:5px;
-
+    gap: 2px;
     text-transform: capitalize;
     font-weight: bold;
+    font-size: 14px;
 }
 
 aside #aside-sect2 span i{
     background-color: white;
-    padding: 5px;
+    padding: 4px;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 aside #aside-sect2 #aside-sect2-ul ul{
@@ -114,8 +118,143 @@ aside #aside-footer #john span{
   color: white;
 }
 
+/* end aside */
+
 #main{
   background-color: #141922;  
   height: 90vh;
     width: 100vw;
 }
+
+#main #main-header{
+    width: 100%;
+    background-color:#080b12;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 30px 20px;
+}
+
+#main #main-header div a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* end main */
+
+footer {    
+    width: 100%;
+    display: flex;
+      
+}
+
+footer #left-footer{
+    display: flex;
+    align-items: center;
+}
+
+footer #left-footer #footer-text-img{
+    display: flex;
+    align-items: center;
+}
+
+footer #left-footer #footer-text-img img{
+    width: 100px;
+    height: auto;
+}
+
+footer #left-footer #footer-text-img #text-left-footer{
+    display: flex;
+    flex-direction: column;
+}
+/* media queries */
+
+/* tablet media queries */
+@media screen and ( max-width: 878px ){
+
+}
+
+/* s media queries */
+ @media screen and (max-width: 639px) {
+    
+ }
+
+ /* xs media queries */
+ @media screen and (max-width: 552px){
+    aside #aside-first-block #aside-header figure :nth-child(1){
+        display: none;
+    }
+
+    aside #aside-first-block #aside-header figure :nth-child(2){
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+     #aside-header figure {
+        width: 100%;
+        padding-block: 0;
+        align-self: flex-start;
+
+    }
+
+    /* header aside logos end */
+    aside{
+        height: 90vh;
+        width: 50px;
+        background-color: black;
+        
+        
+        
+        text-align: center;
+        
+       padding-inline: 0px;
+    }
+
+    aside #aside-sect1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    #aside-sect1 .icon-text span{
+        display: none;
+    }
+
+    aside #aside-sect2{
+        display: none;
+    }
+    
+    #aside-footer .icon-text span{
+        display: none;
+    }
+
+    #aside-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #aside-footer hr{
+        display: none;
+    }
+
+
+
+    #aside-footer #john span{
+        display: none;
+    }
+
+    #aside-footer #john i{
+        font-size: 30px;
+    }
+ }
