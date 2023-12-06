@@ -84,7 +84,7 @@ aside #aside-sect2 span{
     gap: 2px;
     text-transform: capitalize;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 aside #aside-sect2 span i{
@@ -199,6 +199,10 @@ aside #aside-footer #john span{
     
 }
 
+#sub-title{
+    color: grey;
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -225,12 +229,27 @@ aside #aside-footer #john span{
 .main-section .main-cards .card .card-text h3{
     font-size: 16px;
     color: white;
+    text-transform: capitalize;
 }
 
 .main-section .main-cards .card .card-text span{
     color: grey;
     font-size: 14px;
     text-transform: capitalize;
+}
+
+/* third section main */
+
+.round{
+    margin-bottom: 20px;
+}
+
+.round figure{
+    border-radius: 60%;
+}
+
+.round figure img{
+    border-radius: 60%;
 }
 
 /* end main */
