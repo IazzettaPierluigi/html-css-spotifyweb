@@ -14,11 +14,11 @@ main{
 }
 
 aside{
-    width: 300px;
+    width: 200px;
     height: 90vh;
 
 
-    font-size: 20px;
+    font-size: 16px;
 
     background-color: black;
     
@@ -56,10 +56,6 @@ aside{
     align-items: center;
  }
 
-#aside-sect1 span i{
-    font-size: 25px;
-    margin-right: 5px;
-}
 
 aside #aside-first-block{
     display: flex;
@@ -128,6 +124,8 @@ aside #aside-footer #john span{
   background-color: #141922;  
   height: 90vh;
     width: 100%;
+
+    overflow: auto;
 }
 
 #main #main-header{
@@ -178,8 +176,18 @@ aside #aside-footer #john span{
 #main .main-section{
     width: 100%;
     padding-inline: 20px;
+    
+    margin-top: 20px;
 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
    
+    
+}
+
+#main .main-section h2{
+    color: white;
 }
 
 #main .main-section .main-cards{
@@ -187,14 +195,17 @@ aside #aside-footer #john span{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
+    
 }
 
 .card{
     display: flex;
     flex-direction: column;
  
+    
 
-    width: calc(100% / 6 - (  10px ));
+    width: calc(100% / 6 - 10px);
 }
 
 .card figure{
@@ -204,6 +215,24 @@ aside #aside-footer #john span{
 .card figure img{
     width: 100%;
 }
+
+.main-section .main-cards .card .card-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section .main-cards .card .card-text h3{
+    font-size: 16px;
+    color: white;
+}
+
+.main-section .main-cards .card .card-text span{
+    color: grey;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
 /* end main */
 
 footer {    
@@ -262,12 +291,26 @@ footer #icons-left-footer{
 
 /* tablet media queries */
 @media screen and ( max-width: 878px ){
-
+    .card{
+        display: flex;
+        flex-direction: column;
+     
+        
+    
+        width: calc(100% / 4 - 10px);
+    }
 }
 
 /* s media queries */
  @media screen and (max-width: 639px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+     
+        
     
+        width: calc(100% / 2 - 10px);
+    }
  }
 
  /* xs media queries */
