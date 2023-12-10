@@ -275,6 +275,8 @@ footer #left-footer{
     align-items: center;
     gap: 20px;
 
+    padding: 10px;
+
     flex-basis: 25%;
 }
 
@@ -319,30 +321,43 @@ footer #icons-left-footer{
 footer #mid-footer{
     flex-basis: 50%;
 
+
+    padding: 10px;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 footer #mid-footer #mid-footer-top{
-
+    text-align: center;
 }
 
 footer #mid-footer #mid-footer-bottom{
 display: flex;
+justify-content: space-around;
 align-items: center;
+
+
 
 }
 
 footer #mid-footer #mid-footer-bottom #progress-line{
-    width: 100%;
-   padding-left: 5%;
+    width: 80%;
+    height: 6px;
    position: relative;
+   background-color: grey;
+
+   border-radius: 8px;
+ 
 }
 
 footer #mid-footer #mid-footer-bottom #progress-line #bar{
     width: 60%;
     background-color: white;
-    height: 2px;
+    height: 6px;
+
+    border-radius: 8px;
 }
 
 footer #mid-footer #mid-footer-bottom #progress-line #progress-line-button{
@@ -350,15 +365,54 @@ footer #mid-footer #mid-footer-bottom #progress-line #progress-line-button{
     width: 20px;
     background-color: white;
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: 60%;
     border-radius: 60%;
 
-    display: none;
+    
 }
+
+/* end footer mid */
 
 footer #right-footer{
     flex-basis: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+footer #right-footer ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+
+    font-size: 16px;
+
+    color: white;
+
+    display: flex;
+    gap: 15px;
+}
+
+footer #right-footer ul li #progress-line-right{
+    width: 100px;
+    height: 6px;
+ 
+   background-color: grey;
+   border-radius: 8px;
+ 
+}
+
+footer #right-footer ul li #progress-line-right #bar-right{
+    background-color: white;
+    width: 20px;
+    height: 6px;
+
+    border-radius: 8px;
 }
 
 /* media queries */
@@ -386,6 +440,8 @@ footer #right-footer{
         width: calc(100% / 2 - 10px);
     }
  }
+
+ 
 
  /* xs media queries */
  @media screen and (max-width: 552px){
